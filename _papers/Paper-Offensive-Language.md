@@ -1,0 +1,20 @@
+---
+title: "Offensive Language Detection in Social Media Using Machine Learning Algorithms"
+collection: publications
+category: manuscripts
+permalink: /publication/Paper-Offensive-Language
+excerpt: 'This work presents an approach for detecting offensive language in social media content using machine learning algorithms. The study explores various models, feature extraction techniques, and evaluation metrics to improve classification accuracy.'
+date: 2020-08-10
+venue: 'Pontifical Catholic University of Campinas (PUC-Campinas)'
+slidesurl: ''
+paperurl: 'https://github.com/murilodepa/murilodepa.github.io/blob/master/files/Paper%20-%20Offensive%20Language%20Detection%20in%20Social%20Media%20Using%20Machine%20Learning%20Algorithms.pdf'
+bibtexurl: ''
+certificate: 'https://github.com/murilodepa/murilodepa.github.io/blob/master/files/Certificate%20-%20Offensive%20Language%20Detection%20in%20Social%20Media%20Using%20Machine%20Learning%20Algorithms.pdf'
+repository: 'https://github.com/murilodepa/Scientific-Initiation-Project-on-Ensemblem-Methods-for-Machine-Learning'
+citation: 'ARAUJO, M. P; ADÁN COELLO, J. M. (2020). &quot;Identificação de linguagem ofensiva em mídias sociais utilizando algoritmos de aprendizado de máquina.&quot; <i>Pontifical Catholic University of Campinas (PUC-Campinas)</i>.'
+---
+
+Deep neural networks based on general pre-trained language models, using the BERT (Bidirectional Encoder Representations from Transformers) representation, have achieved remarkable results in various natural language processing tasks. However, there is little research focused on fine-tuning these models for text classification tasks, particularly in the Portuguese language. On the other hand, the production of such models involves high computational costs (memory and processing time) and, consequently, significant energy consumption. At runtime, the large model size and high inference time limit their applicability in resource-constrained environments with real-time response requirements.
+This project aimed to propose and analyze mechanisms to, on one hand, improve the accuracy of Portuguese text classification models derived from general pre-trained language representations, and on the other hand, increase efficiency in both the training and deployment processes.
+
+Status: Completed; Nature: Research.
