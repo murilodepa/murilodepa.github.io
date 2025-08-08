@@ -1,7 +1,7 @@
 ---
 title: "Offensive Language Detection in Social Media Using Machine Learning Algorithms"
 collection: publications
-category: manuscripts
+category: projects
 permalink: /publication/Paper-Offensive-Language
 excerpt: 'This work presents an approach for detecting offensive language in social media content using machine learning algorithms. The study explores various models, feature extraction techniques, and evaluation metrics to improve classification accuracy.'
 date: 2020-08-10
