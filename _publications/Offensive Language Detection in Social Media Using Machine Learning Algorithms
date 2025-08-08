@@ -9,7 +9,7 @@ venue: 'Pontifical Catholic University of Campinas (PUC-Campinas)'
 slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
-citation: 'ARAUJO, M. P; ADÁN COELLO, J. M. (2020). &quot;Identificação de linguagem ofensiva em mídias sociais utilizando algoritmos de aprendizado de máquina.&quot; <i>Pontifical Catholic University of Campinas (PUC-Campinas)</i>. (1).'
+citation: 'ARAUJO, M. P; ADÁN COELLO, J. M. (2020). &quot;Identificação de linguagem ofensiva em mídias sociais utilizando algoritmos de aprendizado de máquina.&quot; <i>Pontifical Catholic University of Campinas (PUC-Campinas)</i>.'
 ---
 
 Deep neural networks based on general pre-trained language models, using the BERT (Bidirectional Encoder Representations from Transformers) representation, have achieved remarkable results in various natural language processing tasks. However, there is little research focused on fine-tuning these models for text classification tasks, particularly in the Portuguese language. On the other hand, the production of such models involves high computational costs (memory and processing time) and, consequently, significant energy consumption. At runtime, the large model size and high inference time limit their applicability in resource-constrained environments with real-time response requirements.
