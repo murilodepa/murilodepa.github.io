@@ -2,13 +2,13 @@
 title: "Offensive Language Detection in Social Media Using Machine Learning Algorithms"
 collection: publications
 category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/Paper-Offensive-Language
 excerpt: 'This work presents an approach for detecting offensive language in social media content using machine learning algorithms. The study explores various models, feature extraction techniques, and evaluation metrics to improve classification accuracy.'
 date: 2020-08-10
 venue: 'Pontifical Catholic University of Campinas (PUC-Campinas)'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
+slidesurl: ''
 paperurl: 'https://github.com/murilodepa/murilodepa.github.io/blob/master/files/Paper%20-%20Offensive%20Language%20Detection%20in%20Social%20Media%20Using%20Machine%20Learning%20Algorithms.pdf'
-bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
+bibtexurl: ''
 certificate: 'https://github.com/murilodepa/murilodepa.github.io/blob/master/files/Certificate%20-%20Offensive%20Language%20Detection%20in%20Social%20Media%20Using%20Machine%20Learning%20Algorithms.pdf'
 repository: 'https://github.com/murilodepa/Scientific-Initiation-Project-on-Ensemblem-Methods-for-Machine-Learning'
 citation: 'ARAUJO, M. P; ADÁN COELLO, J. M. (2020). &quot;Identificação de linguagem ofensiva em mídias sociais utilizando algoritmos de aprendizado de máquina.&quot; <i>Pontifical Catholic University of Campinas (PUC-Campinas)</i>.'
