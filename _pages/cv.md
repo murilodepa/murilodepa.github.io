@@ -34,20 +34,46 @@ redirect_from:
   {{ site.data.summary.summary | markdownify }}
 </div>
 
-<h2>Professional Experience</h2>
-{% for exp in site.data.experience %}
-  <p><strong>{{ exp.company }}</strong> – ({{ exp.start_date | date: "%b %Y" }} – 
-  {% if exp.end_date == "present" %}Present{% else %}{{ exp.end_date | date: "%b %Y" }}{% endif %}).
-  </p>
+{% for experience in site.data.experience %}
+  <section class="experience-company">
+    <h3>
+      {{ experience.company }} – 
+      ({{ experience.start_date | date: "%b %Y" }} – 
+      {% if experience.end_date == "present" %}Present{% else %}{{ experience.end_date | date: "%b %Y" }}{% endif %})
+    </h3>
 
-  {% for pos in exp.positions %}
-    <p>{{ pos.title }} – ({{ pos.start_date | date: "%b %Y" }} – 
-    {% if pos.end_date == "present" %}Present{% else %}{{ pos.end_date | date: "%b %Y" }}{% endif %}).</p>
-  {% endfor %}
+    <p>{{ experience.description }}</p>
 
-  <p>{{ exp.description }}</p>
+    {% if experience.positions.size > 1 %}
+      <ul>
+      {% for pos in experience.positions %}
+        <li>
+          {{ pos.title }}
+          {% if pos.start_date and pos.end_date %}
+            – ({{ pos.start_date | date: "%b %Y" }} – 
+            {% if pos.end_date == "present" %}Present{% else %}{{ pos.end_date | date: "%b %Y" }}{% endif %})
+          {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+    {% else %}
+      <ul>
+        <li>
+          {{ experience.positions[0].title }}
+          {% if experience.positions[0].start_date == nil and experience.positions[0].end_date == nil %}
+            <!-- Não mostrar datas para posição sem datas -->
+          {% else %}
+            – ({{ experience.start_date | date: "%b %Y" }} – 
+            {% if experience.end_date == "present" %}Present{% else %}{{ experience.end_date | date: "%b %Y" }}{% endif %})
+          {% endif %}
+        </li>
+      </ul>
+    {% endif %}
+  </section>
+
   <hr />
 {% endfor %}
+
 
 
 
