@@ -9,6 +9,27 @@ redirect_from:
 
 {% include base_path %}
 
+
+<h1>{{ site.data.personal.name }}</h1>
+<p>
+  Nationality: {{ site.data.personal.nationality }} • 
+  Marital Status: {{ site.data.personal.marital_status }} • 
+  Date of Birth: {{ site.data.personal.dob }}
+</p>
+<p>
+  Address: {{ site.data.personal.address }} • 
+  Phone: 
+  {% for phone in site.data.personal.phones %}
+    {{ phone }}{% unless forloop.last %} • {% endunless %}
+  {% endfor %}
+</p>
+<p>
+  Email: 
+  {% for email in site.data.personal.emails %}
+    {{ email }}{% unless forloop.last %} • {% endunless %}
+  {% endfor %}
+</p>
+
 Education
 ======
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
