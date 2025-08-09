@@ -47,9 +47,9 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
-        {% if post.citation and post.paperurl and post.certificate and post.slidesurl and post.repository %}
+        {% if post.citation and post.paperurl and post.certificate and post.repository %}
           <p>Citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}"> Download Paper</a> | <a href="{{ post.certificate }}">Download Certificate</a> | <a href="{{ post.repository }}"> Source repository</a></p>
-        {% elsif post.citation and post.paperurl and post.slidesurl and post.repository %}
+        {% elsif post.citation and post.paperurl and post.repository %}
           <p>Citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}"> Download Paper</a> | <a href="{{ post.repository }}"> Source repository</a></p>
         {% elsif page.citation and page.paperurl and page.slidesurl %}
           <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
