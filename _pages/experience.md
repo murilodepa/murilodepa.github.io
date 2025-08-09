@@ -30,7 +30,6 @@ author_profile: true
       {% endfor %}
       </ul>
     {% else %}
-      <!-- Só uma posição -->
       <p>
         {{ experience.positions[0].title }}
         {% if experience.positions[0].start_date == nil and experience.positions[0].end_date == nil %}
@@ -42,5 +41,8 @@ author_profile: true
       </p>
     {% endif %}
   </section>
+
+  <hr />
 {% endfor %}
+
 
