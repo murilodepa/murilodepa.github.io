@@ -30,7 +30,10 @@ redirect_from:
 <p>{{ site.data.objective.objective }}</p>
 
 <h2>Summary of Qualifications</h2>
-<p>{{ site.data.summary.summary }}</p>
+<div>
+  {{ site.data.summary.summary | markdownify }}
+</div>
+
 
 
 Education
