@@ -120,7 +120,7 @@ Languages
 <h2>Languages</h2>
 <ul>
   {% for lang in site.data.languages %}
-    <li>{{ lang.name }} – {{ lang.level }}</li>
+    <li>{{ lang }}</li>
   {% endfor %}
 </ul>
 
