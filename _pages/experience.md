@@ -30,19 +30,22 @@ author_profile: true
       {% endfor %}
       </ul>
     {% else %}
-      <p>
-        {{ experience.positions[0].title }}
-        {% if experience.positions[0].start_date == nil and experience.positions[0].end_date == nil %}
-          <!-- Não mostrar datas para posição sem datas -->
-        {% else %}
-          – ({{ experience.start_date | date: "%b %Y" }} – 
-          {% if experience.end_date == "present" %}Present{% else %}{{ experience.end_date | date: "%b %Y" }}{% endif %})
-        {% endif %}
-      </p>
+      <ul>
+        <li>
+          {{ experience.positions[0].title }}
+          {% if experience.positions[0].start_date == nil and experience.positions[0].end_date == nil %}
+            <!-- Não mostrar datas para posição sem datas -->
+          {% else %}
+            – ({{ experience.start_date | date: "%b %Y" }} – 
+            {% if experience.end_date == "present" %}Present{% else %}{{ experience.end_date | date: "%b %Y" }}{% endif %})
+          {% endif %}
+        </li>
+      </ul>
     {% endif %}
   </section>
 
   <hr />
 {% endfor %}
+
 
 
