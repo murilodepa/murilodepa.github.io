@@ -26,6 +26,15 @@ redirect_from:
   {% endfor %}
 </p>
 
+<h2>Professional Objective</h2>
+<p>{{ site.data.objective.objective }}</p>
+
+<h2>Summary of Qualifications</h2>
+<ul>
+  {% for item in site.data.summary.summary %}
+  <li>{{ item }}</li>
+  {% endfor %}
+</ul>
 
 Education
 ======
