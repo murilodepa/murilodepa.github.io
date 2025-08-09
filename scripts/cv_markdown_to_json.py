@@ -124,6 +124,13 @@ def extract_author_info(config):
                 "username": "",
                 "url": author.get('orcid')
             })
+
+        if author.get('lattes'):
+            profiles.append({
+                "network": "LATTES",
+                "username": "",
+                "url": author.get('lattes')
+            })
         
         if author.get('researchgate'):
             profiles.append({
