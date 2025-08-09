@@ -48,7 +48,7 @@ layout: default
         {{ content }}
 
         {% if page.citation and page.paperurl and page.certificate and page.repository %}
-          <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.certificate }}">Download Certificate | <a href="{{ page.repository }}">Source repository</a></p>
+          <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.certificate }}">Download Certificate</a> | <a href="{{ page.repository }}">Source repository</a></p>
         {% elsif page.citation and page.paperurl and page.repository %}
           <p style="font-size: smaller">Citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.repository }}">Source repository</a></p>
         {% elsif post.citation and post.paperurl %}
