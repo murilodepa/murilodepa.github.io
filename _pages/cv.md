@@ -18,10 +18,6 @@ redirect_from:
 </p>
 <p>
   Address: {{ site.data.personal.address }} • 
-  Phone: 
-  {% for phone in site.data.personal.phones %}
-    {{ phone }}{% unless forloop.last %} • {% endunless %}
-  {% endfor %}
 </p>
 <p>
   Email: 
