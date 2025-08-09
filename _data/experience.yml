@@ -18,6 +18,31 @@
       start_date: "2020-11"
       end_date: "2021-06"
 
+- company: Pontifical Catholic University of Campinas – PUC-Campinas
+  start_date: "2018-08"
+  end_date: "2021-06"
+  location: Brazil, Sao Paulo, Campinas
+  description: >
+    I served as a teaching assistant for several fundamental undergraduate courses, providing student support, helping prepare lessons and exercises, and contributing to the smooth running of academic activities.
+  positions:
+    - title: Computational Linear Algebra (18h/week)
+    - title: Computer Architecture (12h/week)
+    - title: Logic Circuits (12h/week)
+    - title: Linear Algebra and Vectors (6h/week)
+    - title: Differential and Integral Calculus A (12h/week)
+    - title: Fundamentals of Differential and Integral Calculus (12h/week)
+      
+- company: Scholarship student at National Council of Scientific and Technological Development (CNPq)
+  start_date: "2019-08"
+  end_date: "2020-07"
+  location: Brazil, Sao Paulo, Campinas
+  description: >
+    Scholarship student at National Council of Scientific and Technological Development (CNPq), under the supervision of Dr. Juan Manuel Adán Coello. Conducted research titled "Identification of Offensive Language in Social Media Using Machine Learning Algorithms", utilizing Python with Keras and TensorFlow.
+  positions:
+    - title: Scholarship student
+      start_date: "2019-08"
+      end_date: "2020-07"
+
 - company: Associação Informática Junior (Info Jr)
   start_date: "2018-10"
   end_date: "2019-07"
