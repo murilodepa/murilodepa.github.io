@@ -9,7 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
-
+{% comment %}
+=======================
+Header / Personal Information
+=======================
+{% endcomment %}
 <h1>{{ site.data.personal.name }}</h1>
 <p>
   <strong>Nationality:</strong> {{ site.data.personal.nationality }} • 
@@ -26,14 +30,30 @@ redirect_from:
   {% endfor %}
 </p>
 
+{% comment %}
+=======================
+Professional Objective
+=======================
+{% endcomment %}
 <h2>Professional Objective</h2>
 <p>{{ site.data.objective.objective }}</p>
 
+{% comment %}
+=======================
+Summary of Qualifications
+=======================
+{% endcomment %}
 <h2>Summary of Qualifications</h2>
 <div>
   {{ site.data.summary.summary | markdownify }}
 </div>
 
+{% comment %}
+=======================
+Professional Experience
+=======================
+{% endcomment %}
+<h2>Professional Experience</h2>
 {% for experience in site.data.experience %}
   <section class="experience-company">
     <h3>
@@ -75,8 +95,46 @@ redirect_from:
 {% endfor %}
 
 
+{% comment %}
+=======================
+Education
+=======================
+{% endcomment %}
+<h2>Education</h2>
+<ul>
+  {% for edu in site.data.education %}
+  <li>
+    {{ edu.degree }}.<br />
+    {{ edu.institution }} – ({{ edu.start_date | date: "%b %Y" }} – 
+    {% if edu.end_date == "present" %}Present{% else %}{{ edu.end_date | date: "%b %Y" }}{% endif %}).
+  </li>
+  <hr />
+  {% endfor %}
+</ul>
 
+{% comment %}
+=======================
+Languages
+=======================
+{% endcomment %}
+<h2>Languages</h2>
+<ul>
+  {% for lang in site.data.languages %}
+    <li>{{ lang.name }} – {{ lang.level }}</li>
+  {% endfor %}
+</ul>
 
+{% comment %}
+=======================
+Courses and Certificates
+=======================
+{% endcomment %}
+<h2>Courses and Certificates</h2>
+<ul>
+  {% for course in site.data.courses %}
+    <li>{{ course.name }} ({{ course.duration }})</li>
+  {% endfor %}
+</ul>
 
 Education
 ======
