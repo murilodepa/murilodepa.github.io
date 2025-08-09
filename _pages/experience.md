@@ -1,6 +1,30 @@
 ---
-layout: experience
+layout: archive
 title: "Experience"
 permalink: /experience/
 author_profile: true
 ---
+
+{% include base_path %}
+
+{% for company in site.data.experience %}
+  <section>
+    <h2>
+      {{ company.company }} – ({{ company.start_date | date: "%b %Y" }} – 
+      {% if company.end_date == "present" %}Present{% else %}{{ company.end_date | date: "%b %Y" }}{% endif %})
+    </h2>
+    <p><em>{{ company.location }}</em></p>
+
+    <ul>
+      {% for position in company.positions %}
+      <li>
+        • {{ position.title }} – ({{ position.start_date | date: "%b %Y" }} – 
+        {% if position.end_date == "present" %}Present{% else %}{{ position.end_date | date: "%b %Y" }}{% endif %})
+      </li>
+      {% endfor %}
+    </ul>
+
+    <p>{{ company.description }}</p>
+  </section>
+  <hr />
+{% endfor %}
