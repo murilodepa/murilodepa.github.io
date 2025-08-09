@@ -12,19 +12,20 @@ redirect_from:
 
 <h1>{{ site.data.personal.name }}</h1>
 <p>
-  Nationality: {{ site.data.personal.nationality }} • 
-  Marital Status: {{ site.data.personal.marital_status }} • 
-  Date of Birth: {{ site.data.personal.dob }}
+  <strong>Nationality:</strong> {{ site.data.personal.nationality }} • 
+  <strong>Marital Status:</strong> {{ site.data.personal.marital_status }} • 
+  <strong>Date of Birth:</strong> {{ site.data.personal.dob }}
 </p>
 <p>
-  Address: {{ site.data.personal.address }} • 
+  <strong>Address:</strong> {{ site.data.personal.address }}
 </p>
 <p>
-  Email: 
+  <strong>Email:</strong> 
   {% for email in site.data.personal.emails %}
     {{ email }}{% unless forloop.last %} • {% endunless %}
   {% endfor %}
 </p>
+
 
 Education
 ======
