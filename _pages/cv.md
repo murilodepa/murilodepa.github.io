@@ -131,8 +131,8 @@ Courses and Certificates
 {% endcomment %}
 <h2>Courses and Certificates</h2>
 <ul>
-  {% for course in site.data.courses %}
-    <li>{{ course.name }} ({{ course.duration }})</li>
+  {% for course in site.data.courses.courses %}
+    <li>{{ course }}</li>
   {% endfor %}
 </ul>
 
