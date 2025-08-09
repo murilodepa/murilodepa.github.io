@@ -1,0 +1,30 @@
+- company: Samsung Institute for Development of Informatics (SiDi)
+  start_date: "2020-11"
+  end_date: "present"
+  location: Brazil, Sao Paulo, Campinas
+  description: >
+    Development and maintenance of cryptographic solutions, secure storage, integration with native browsers, educational and parental control features, and artificial intelligence tools for language processing in partnership with Samsung for desktop and mobile applications (Samsung Kids, Samsung Pass, Samsung Internet, and Samsung Language IA).
+  positions:
+    - title: Mid-level Software Developer
+      start_date: "2024-07"
+      end_date: "present"
+    - title: Junior Software Developer
+      start_date: "2023-01"
+      end_date: "2024-06"
+    - title: Trainee Software Developer
+      start_date: "2021-06"
+      end_date: "2022-12"
+    - title: Software Development Intern
+      start_date: "2020-11"
+      end_date: "2021-06"
+
+- company: Associação Informática Junior (Info Jr)
+  start_date: "2018-10"
+  end_date: "2019-07"
+  location: Brazil, Sao Paulo, Campinas
+  description: >
+    Led quality assurance processes to improve software development standards and project deliveries within the junior company. Coordinated quality control activities, implemented best practices, and ensured compliance with client requirements. Collaborated closely with development teams to foster continuous improvement and deliver high-quality software solutions.
+  positions:
+    - title: Director of Quality
+      start_date: "2018-10"
+      end_date: "2019-07"
