@@ -34,6 +34,18 @@ redirect_from:
   {{ site.data.summary.summary | markdownify }}
 </div>
 
+<h2>Professional Experience</h2>
+{% for exp in site.data.experience.professional_experience %}
+  <p><strong>{{ exp.company }}</strong> – ({{ exp.start_date }} – {{ exp.end_date | replace: "present", "Present" }})</p>
+  <ul>
+    {% for pos in exp.positions %}
+    <li>{{ pos.title }} – ({{ pos.start_date }} – {{ pos.end_date | replace: "present", "Present" }})</li>
+    {% endfor %}
+  </ul>
+  <p>{{ exp.description }}</p>
+  <hr />
+{% endfor %}
+
 
 
 Education
