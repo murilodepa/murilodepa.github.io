@@ -18,7 +18,7 @@ author_profile: true
     <ul>
       {% for position in company.positions %}
       <li>
-        • {{ position.title }} – ({{ position.start_date | date: "%b %Y" }} – 
+        {{ position.title }} – ({{ position.start_date | date: "%b %Y" }} – 
         {% if position.end_date == "present" %}Present{% else %}{{ position.end_date | date: "%b %Y" }}{% endif %})
       </li>
       {% endfor %}
