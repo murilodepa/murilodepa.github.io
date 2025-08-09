@@ -35,16 +35,20 @@ redirect_from:
 </div>
 
 <h2>Professional Experience</h2>
-{% for exp in site.data.experience.professional_experience %}
-  <p><strong>{{ exp.company }}</strong> – ({{ exp.start_date }} – {{ exp.end_date | replace: "present", "Present" }})</p>
-  <ul>
-    {% for pos in exp.positions %}
-    <li>{{ pos.title }} – ({{ pos.start_date }} – {{ pos.end_date | replace: "present", "Present" }})</li>
-    {% endfor %}
-  </ul>
+{% for exp in site.data.experience %}
+  <p><strong>{{ exp.company }}</strong> – ({{ exp.start_date | date: "%b %Y" }} – 
+  {% if exp.end_date == "present" %}Present{% else %}{{ exp.end_date | date: "%b %Y" }}{% endif %}).
+  </p>
+
+  {% for pos in exp.positions %}
+    <p>{{ pos.title }} – ({{ pos.start_date | date: "%b %Y" }} – 
+    {% if pos.end_date == "present" %}Present{% else %}{{ pos.end_date | date: "%b %Y" }}{% endif %}).</p>
+  {% endfor %}
+
   <p>{{ exp.description }}</p>
   <hr />
 {% endfor %}
+
 
 
 
