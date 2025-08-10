@@ -45,7 +45,7 @@ author:
   scopus           : # URL
 
   # Repositories and software development
-  bitbucket        : "murilodepa"
+  bitbucket        : # Username
   codepen          : # Username
   dribbble         : # Username
   github           : "murilodepa"
@@ -63,7 +63,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # "murilodepa"
+  linkedin         : "murilodepa"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
